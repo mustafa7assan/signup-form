@@ -4,8 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Sign-up Form</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="left"></section>
+      <section class="right">
+        <div class="header-text">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dream.
+          </p>
+          <p>Sing up <em>now</em> to get started.</p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-container">
+          <h3>Let's do this!</h3>
+          <form action="" id="sign-up">
+            <div class="top">
+              <div class="form-row">
+                <div class="form-col">
+                  <label for="first">First Name</label>
+                  <input required type="text" name="first" id="first" />
+                </div>
+                <div class="form-col">
+                  <label for="last">Last Name</label>
+                  <input required type="text" name="last" id="last" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col">
+                  <label for="email">Email</label>
+                  <input required type="email" name="email" id="email" />
+                </div>
+                <div class="form-col">
+                  <label for="phone">Phone Number</label>
+                  <input required type="tel" name="phone" id="phone" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col">
+                  <label for="password">Password</label>
+                  <input
+                    required
+                    type="password"
+                    name="password"
+                    id="password"
+                  />
+                </div>
+                <div class="form-col">
+                  <label for="password-confirm">Password Confirm</label>
+                  <input
+                    required
+                    type="password"
+                    name="password-confirm"
+                    id="passowrd-confirm"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="bottom">
+          <button type="submit" form="sign-up">Create Account</button>
+          <p>Already have account? <a href="#">Log in</a></p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
