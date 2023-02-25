@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Norse";
+  src: url("./font/Norse-Bold.otf");
+}
 html,
 body {
   width: 100%;
@@ -25,6 +29,7 @@ main {
   background-image: url("./img/bg.jpg");
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 .right {
   flex: 4;
@@ -88,4 +93,25 @@ main {
   text-decoration: none;
   color: #596d48;
   font-weight: 600;
+}
+
+.logo-container {
+  height: 110px;
+  width: 100%;
+  background-color: #00000080;
+  position: absolute;
+  top: 20%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container img {
+  height: 70%;
+  width: auto;
+}
+.logo-container .logo-text {
+  font-size: 70px;
+  font-family: "Norse";
+  color: white;
 }
