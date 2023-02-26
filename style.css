@@ -71,6 +71,16 @@ main {
   padding: 3px 9px;
   outline: none;
 }
+.error {
+  border: 1px solid rgb(230, 36, 36) !important;
+}
+
+.form-col input:focus {
+  border-color: rgb(3, 146, 230);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
 .bottom {
   background-color: #eee;
 }
@@ -101,17 +111,34 @@ main {
   background-color: #00000080;
   position: absolute;
   top: 20%;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .logo-container img {
-  height: 70%;
+  height: 80%;
   width: auto;
 }
 .logo-container .logo-text {
   font-size: 70px;
   font-family: "Norse";
   color: white;
+}
+.not-match {
+  color: rgb(230, 36, 36);
+  margin-top: 2px;
+  font-size: 10px;
+}
+@media screen and (max-width: 480px) {
+  .left {
+    display: none;
+  }
+  .form-row {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .form-col {
+    margin-bottom: 10px;
+  }
 }

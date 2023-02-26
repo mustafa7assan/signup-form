@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Sign-up Form</title>
   </head>
   <body>
@@ -59,18 +60,21 @@
                   <label for="password">Password</label>
                   <input
                     required
+                    class="error"
                     type="password"
                     name="password"
                     id="password"
                   />
+                  <p class="not-match">* Passwords dot not match</p>
                 </div>
                 <div class="form-col">
                   <label for="password-confirm">Password Confirm</label>
                   <input
+                    class="error"
                     required
                     type="password"
                     name="password-confirm"
-                    id="passowrd-confirm"
+                    id="password-confirm"
                   />
                 </div>
               </div>
