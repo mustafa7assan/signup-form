@@ -1,3 +1,3 @@
 # signup-form
 
-background image source https://unsplash.com/@nate_dumlao
+![alt text](./img/screen-shot.png)
